@@ -25,19 +25,19 @@ body {
 #chat_container {
   flex: 1;
   width: 80%;
-  height: 80%;
-  overflow-y: scroll;
-
+  height: 100%;
+  overflow-y: auto;
+  
   display: flex;
   flex-direction: column;
   gap: 10px;
-
+  
   -ms-overflow-style: none;
   scrollbar-width: none;
-
+  
   padding-bottom: 20px;
   scroll-behavior: smooth;
-}
+  }
 
 /* hides scrollbar */
 #chat_container::-webkit-scrollbar {
@@ -54,7 +54,7 @@ body {
 }
 
 .chat {
-  width: 100%;
+  width: 80%;
   max-width: 1280px;
   margin: 0 auto;
 
